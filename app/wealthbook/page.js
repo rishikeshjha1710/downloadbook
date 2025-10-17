@@ -6,7 +6,7 @@ import React from 'react';
 
 const PremiumDownloadPage = () => {
   // CORRECTED PATH: The file is assumed to be directly in the public folder as 'ebook.pdf'.
-  const downloadLink = "/wealthreprogrammingcode.pdf"; 
+  const downloadLink = "/Wealth_RC.pdf"; 
   
   // Custom component for the powerful download button
   // This component uses the standard <a> tag with the 'download' attribute, 
