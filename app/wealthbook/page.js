@@ -77,28 +77,7 @@ const WealthBookPage = () => {
         </div>
       </section>
 
-      {/* === Next Steps Section === */}
-      <section className="max-w-3xl mx-auto p-4 md:p-8 mb-32 md:mb-10">
-        <div className="bg-gray-700 p-6 rounded-xl shadow-inner border-l-4 border-yellow-600">
-          <h3 className="text-2xl font-bold text-white mb-3">
-            Your Next Step: Implementation
-          </h3>
-          <p className="text-gray-300">
-            The true transformation begins with action. Schedule a 90-minute
-            deep-focus session within the next 48 hours to begin the initial
-            &quot;Reprogramming Phase&quot; described in Chapter One. This
-            exercise activates your wealth identity and primes your subconscious
-            for success.
-          </p>
-          <a
-            href="#"
-            className="mt-4 inline-block text-sm font-semibold text-yellow-400 hover:text-white transition"
-          >
-            Explore Implementation Guide &rarr;
-          </a>
-        </div>
-      </section>
-
+      
       {/* === Sticky Mobile Button === */}
       <div className="md:hidden">
         <FixedDownloadButton />
