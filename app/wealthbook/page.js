@@ -45,38 +45,7 @@ const WealthBookPage = () => {
         </div>
       </section>
 
-      {/* === Book Preview Section === */}
-      <section className="max-w-4xl mx-auto my-10 p-6 sm:p-10 text-center">
-        <div className="flex flex-col md:flex-row items-center gap-8">
-          <div className="w-full md:w-1/2">
-            <Image
-              src="/wealth-book-cover.png"
-              alt="Wealth Reprogramming Code Cover"
-              width={500}
-              height={700}
-              className="rounded-2xl shadow-2xl border border-gray-700"
-            />
-          </div>
-          <div className="w-full md:w-1/2 text-left">
-            <h2 className="text-3xl font-bold text-yellow-400 mb-4">
-              Transform Your Money Blueprint
-            </h2>
-            <p className="text-gray-300 leading-relaxed mb-4">
-              The <strong>Wealth Reprogramming Code</strong> is not another financial theory.
-              It&apos;s a tested mental reprogram that rewires how you perceive,
-              attract, and multiply wealth. Inside, you&apos;ll uncover the
-              &quot;Abundance Frequency&quot; — a mindset pattern used by
-              high-performers to create flow and financial ease.
-            </p>
-            <p className="text-gray-400">
-              This digital edition walks you step-by-step through the hidden
-              structure behind financial results. Learn how to replace scarcity
-              scripts with neural codes that attract opportunity and exponential
-              growth.
-            </p>
-          </div>
-        </div>
-      </section>
+     
 
       {/* === Congratulations Section === */}
       <section className="p-4 sm:p-10 max-w-3xl mx-auto my-10 md:my-16">
