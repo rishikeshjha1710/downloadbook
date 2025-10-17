@@ -34,16 +34,7 @@ const WealthBookPage = () => {
   return (
     <div className="min-h-screen bg-gray-900 text-white font-sans">
       {/* === Header Section === */}
-      <section className="w-full bg-gray-950 shadow-2xl p-8 pt-12 text-center border-b border-yellow-700">
-        <div className="max-w-3xl mx-auto">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-yellow-400 font-serif">
-            The Wealth Reprogramming Code
-          </h1>
-          <p className="mt-3 text-xl sm:text-2xl font-light text-gray-300">
-            Exclusive Digital Blueprint &mdash; Unlock Financial Mastery
-          </p>
-        </div>
-      </section>
+      
 
      
 
