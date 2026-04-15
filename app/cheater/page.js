@@ -2,34 +2,34 @@
 import React from 'react';
 import Image from 'next/image';
 
+const FixedDownloadButton = ({ downloadLink }) => (
+  <div className="fixed bottom-0 left-0 right-0 p-4 bg-gray-900/90 backdrop-blur-sm z-50 md:relative md:p-0 md:bg-transparent md:backdrop-blur-none md:z-auto md:max-w-sm md:mx-auto">
+    <a
+      href={downloadLink}
+      download
+      className="w-full inline-flex items-center justify-center px-8 py-4 text-xl font-extrabold rounded-xl shadow-2xl text-gray-900 bg-yellow-400 hover:bg-yellow-300 focus:outline-none focus:ring-4 focus:ring-yellow-500 transition duration-300 ease-in-out animate-[pulse_1.5s_cubic-bezier(0.4,0,0.6,1)_infinite] transform hover:scale-[1.03] active:scale-95"
+    >
+      <svg
+        className="w-6 h-6 mr-3"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+          d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+        ></path>
+      </svg>
+      DOWNLOAD YOUR BOOK NOW
+    </a>
+  </div>
+);
+
 const WealthBookPage = () => {
   const downloadLink = '/Cheater.pdf';
-
-  const FixedDownloadButton = () => (
-    <div className="fixed bottom-0 left-0 right-0 p-4 bg-gray-900/90 backdrop-blur-sm z-50 md:relative md:p-0 md:bg-transparent md:backdrop-blur-none md:z-auto md:max-w-sm md:mx-auto">
-      <a
-        href={downloadLink}
-        download
-        className="w-full inline-flex items-center justify-center px-8 py-4 text-xl font-extrabold rounded-xl shadow-2xl text-gray-900 bg-yellow-400 hover:bg-yellow-300 focus:outline-none focus:ring-4 focus:ring-yellow-500 transition duration-300 ease-in-out animate-[pulse_1.5s_cubic-bezier(0.4,0,0.6,1)_infinite] transform hover:scale-[1.03] active:scale-95"
-      >
-        <svg
-          className="w-6 h-6 mr-3"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
-          ></path>
-        </svg>
-        DOWNLOAD YOUR BOOK NOW
-      </a>
-    </div>
-  );
 
   return (
     <div className="min-h-screen bg-gray-900 text-white font-sans">
@@ -65,7 +65,7 @@ const WealthBookPage = () => {
           </p>
 
           <div className="hidden md:block mt-8">
-            <FixedDownloadButton />
+            <FixedDownloadButton downloadLink={downloadLink} />
           </div>
 
           <div className="mt-8 pt-4 border-t border-gray-700">
@@ -80,7 +80,7 @@ const WealthBookPage = () => {
       
       {/* === Sticky Mobile Button === */}
       <div className="md:hidden">
-        <FixedDownloadButton />
+        <FixedDownloadButton downloadLink={downloadLink} />
       </div>
     </div>
   );
