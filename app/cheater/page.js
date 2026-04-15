@@ -34,9 +34,9 @@ const WealthBookPage = () => {
   return (
     <div className="min-h-screen bg-gray-900 text-white font-sans">
       {/* === Header Section === */}
-      
 
-     
+
+
 
       {/* === Congratulations Section === */}
       <section className="p-4 sm:p-10 max-w-3xl mx-auto my-10 md:my-16">
@@ -77,7 +77,7 @@ const WealthBookPage = () => {
         </div>
       </section>
 
-      
+
       {/* === Sticky Mobile Button === */}
       <div className="md:hidden">
         <FixedDownloadButton downloadLink={downloadLink} />
